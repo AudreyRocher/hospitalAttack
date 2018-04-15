@@ -1,0 +1,174 @@
+/******************************/
+/***********CSS FONTS**********/
+/******************************/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+/******************************/
+/***********CSS MAIN**********/
+/******************************/
+aside {
+  z-index: 50;
+  position: fixed;
+  width: 9%;
+  height: 400px;
+  background-color: #FBDDF4;
+  margin-left: 1150px;
+  border-radius: 10px;
+  border: solid black 1px;
+}
+
+body{
+  display : flex;
+  display: -webkit-flex; /*anciennes versions de safari & IE & firefox & Chrome */
+  display: -ms-flex; /*IE 10*/
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+
+
+
+
+ul{
+  padding: 1.3rem;
+}
+
+ul li{
+  list-style-type: none;
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 1em;
+}
+
+p{
+  display: inline-block;
+  width: 49%;
+  margin: auto;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.5rem;
+}
+
+/******************************/
+/********CSS PERSONNAGE********/
+/******************************/
+
+    .masque {
+      position:absolute;
+      overflow: hidden;
+      margin: auto;
+      top:0px;
+      left:0px;
+      /*border: solid black 1px;*/
+      width: 30px;
+      height: 68px;
+    }
+
+    .sprite{
+      position: absolute;
+      top: -2px;
+      left: -18px;
+    }
+
+/**************************************/
+/********CSS OBJETS A COLLECTER********/
+/**************************************/
+    #point{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      top: 370px;
+    }
+
+
+    .items{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      z-index: 1;
+    }
+
+
+    .hide{
+      display: none;
+    }
+
+/**************************************/
+/***********CSS VIRUS A TUER***********/
+/**************************************/
+    .virus{
+      z-index: 20;
+      position: absolute;
+      -webkit-animation : sick 0.3s steps(3) infinite;
+      background: url('GameImg/evil-virus.png') no-repeat;
+      height: 70px;
+      width: 60px;
+    }
+
+    @-webkit-keyframes sick{
+      0% { background-position: 0 0;}
+      100% {background-position: 0 -210px; }
+    }
+
+/******************************/
+/********CSS BACKGROUND********/
+/******************************/
+
+
+    #containerDecor{
+      position: absolute;
+      overflow: hidden;
+      width: 1114px;
+    }
+
+    #score{
+      z-index: 50;
+      display: -webkit-flex;
+      -webkit-justify-content: space-between;
+      position: fixed;
+      background-color: #FBDDF4;
+      width: 1108px;
+      height: 30px;
+      left:84px;
+      color: black;
+      border: 1px solid black;
+      opacity: 0.9;
+    }
+
+    /******************************/
+    /*****CSS MESSAGE END GAME*****/
+    /******************************/
+
+    .endMessage{
+      display: none;
+      position: absolute;
+      z-index : 2;
+      top: 296px;
+      margin-left: 57px;
+      background-color: #FBDDF4;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 1000px;
+      height: 300px;
+    }
+
+    .startMessage{
+      background: url('GameImg/GameHowToPlay.png');
+      position: absolute;
+      z-index : 2;
+      top: 296px;
+      margin-left: 57px;
+      background-color: #FBDDF4;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 1000px;
+      height: 300px;
+    }
+
+    .displayMsg{
+      font-family: 'Inconsolata', monospace;
+      text-align: center;
+      margin-top: 13%;
+      padding: 0 1rem;
+    }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Main theme Resident Evil II the Front Hall by Masami Ueda, Shusaku Uchiyama et Shun Nishigaki -->
+<!-- Design et illustrations by Audrey Rocher. You don't have the right to take them for your personnal or commercial use -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jeu CV en javascript natif. Projet de fin de formation front-end. Réalisé par Audrey Rocher, développeur fullstack JavaScript"/>
+    <meta name="author" content="Audrey Rocher"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow"/>
+		<meta name="googlebot" content="index, follow"/>
+    <link rel="stylesheet" type="text/css" href="jeucv.css" />
+    <script type="text/javascript" src="jeuCVAudrey.js"></script>
+    <link rel="icon" type="image/png" href="GameImg/faviconAudreyRocherRadius.png" sizes="16x16">
+    <title>Audrey Rocher, hospital attack javascript game</title>
+  </head>
+
+  <body>
+  <!--ARRIERE PLAN-->
+    <div id="containerDecor">
+      <!--SCORE-->
+      <div id="score">
+        <p id="writeScore"> </p>
+      <!--POINTS DE VIE-->
+        <p id="writeLife"> </p>
+      </div>
+    <!--DECOR-->
+      <img id="decor" src="GameImg/background.jpg">
+    </div>
+  <!--PERSONNAGE-->
+    <div id="centrage" class="contenant">
+      <div id="container" class="masque">
+        <img id="contenu" class="sprite" src="GameImg/doctor.png" />
+      </div>
+    </div>
+  <!--CONTAINER DES OBJETS A COLLECTER-->
+    <div id="itemContainer"></div>
+  <!--NAV POUR AFFICHER LES ITEMS COLLECTES-->
+    <aside>
+      <ul>
+      </ul>
+    </aside>
+  <!--CONTAINER DES VIRUS A TUER-->
+    <div id="virusContainer">
+    </div>
+  <!--CONTAINER MESSAGE VOUS AVEZ PERDU-->
+    <div id="endGame" class="endMessage">
+      <img src="GameImg/GameLoose.png">
+    </div>
+  <!--CONTAINER MESSAGE VOUS AVEZ GAGNE-->
+    <div id="winGame" class="endMessage">
+      <img src="GameImg/GameWin.png">
+    </div>
+  <!--CONTAINER MESSAGE INSTRUCTIONS -->
+    <div id="instructions" class="startMessage">
+    </div>
+  </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113067710-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-113067710-1');
+  </script>
+</html>
